@@ -8,6 +8,12 @@
 ![Linear Regression Stats](Images/Linear_Regression.png)
 
 ## Summary Statistics on Suspension Coil
+
 Looking at the total_summary and lot_summary data, there is no indication that anything exceeds the design specifications by anything close to 100 pounds per square inch. In the total_summary data, the variance and standard deviation is at a steady 62.29 and 7.89, with the median slightly fluctuating. However, as far as the lot_summary data, lots 1 and 2 look like they meet design specifications, but lot 3 is off, with a 170 variance and 13 standard deviation. Lot 3 does not meet design specifications.
 ![total_summary](Images/total_summary.png)
 ![lot_summary](Images/lot_summary.png)
+
+## T-Tests on Suspension Coils
+
+When looking at all data combined (the first part of the t-test screenshot below), the p-value is 0.06028, which does not reject the null hypothesis - the data is not statistically significant, this value is greater than 0.05. When looking at the lots individually, lots 1 and 2 both show data that is not significant (with p-values much greater than 0.05), and only lot 3 having a p-value smaller than 0.05. With this data, there is no reason to reject the null hypothesis, since the data is not statistically significant.
+![lot_summary](Images/t_tests.png)
